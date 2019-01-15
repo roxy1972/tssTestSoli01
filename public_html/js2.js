@@ -20,7 +20,7 @@ function calcolo() {
     var familyName = document.getElementById("in_cognome").value;
     var text = name + " " + familyName;
     document.getElementById("sp_name1").innerHTML = text;
-    if (voto => valutMin) {
+    if (voto >= valutMin) {
         document.getElementById("sp_esito").innerHTML = "promosso!";
     } else {
         document.getElementById("sp_esito").innerHTML = "bocciato!";
