@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js4.js"></script>
+    </head>
+
+    <body>
+        <div>Test da soli in classe: verifica apprendimento!</div> <br/><br/>
+        <input type="text" id="in_nome" placeholder="ins.nome"/>
+        <input type="text" id="in_cognome" placeholder="ins.cognome"/><br/><br/>
+        <button onclick="login()">Login</button> <br/><br/>
+        <div > Benvenuto: <span id="sp_name"></span></div>
+        <br/>
+
+        <input type="text" id="in_voto" placeholder="ins.voto"/>
+        <input type="text" id="in_votoMin" placeholder="ins.votazione minima"/><br/><br/>
+        <button onclick="calcolo()">Calcola</button> <br/><br/>
+        <div id="div_esito"> Lo studente <span id="sp_name1"> </span></div>
+        <div>è stato: <span id="sp_esito"> </span></div>
+        <br/>
+        <h2>VALUTAZIONE ALLIEVO</h2>
+
+        <table width="100%">
+            <tr>
+                <td width="70%">
+                    <input id="in_valutazione" placeholder="ins.valutazione ALUNNO" type="number" max="10" min="0">
+                    <input type="button" value="VALUTA" onclick="addValutazioni()"><br><br>
+                    <input type="button" value="MOSTRA MEDIA" onclick="visMedia()"><br><br>
+                    Voti inseriti:  <span id="votIns">0</span><br>
+                    Visualizza media:  <span id="mediaVot">0</span><br>
+                </td>                
+            </tr>   
+        </table>
+    </body>   
+</html>
